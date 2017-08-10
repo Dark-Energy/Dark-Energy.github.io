@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+   <link rel="stylesheet" type="text/css" href="css/news-2.css"  />
+      <link rel="stylesheet" type="text/css" href="css/line-menu.css"  />
+      <link rel="stylesheet" type="text/css" href="css/edit-form.css"  />	  
+
+</head>
+
+<body>
+
+
+<div id="main-menu-app">
+	<application-main-menu></application-main-menu>
+</div>
+<div class="clear-block"></div>
+
+
+<!--mt-edit-form v-bind:params="{'element_type':'text'}"  ></mt-edit-form-->
+<!--mt-edit-form v-bind:params="{'element_type':'select', 'options':options}"></mt-edit-form-->
+
+	
+<div id="app">
+
+
+<dropdown-category-menu v-bind:base_url="base_url" v-bind:category_list="category_list" :categories="categories"> </dropdown-category-menu>
+	    
+<div class="clear-block"></div>
+	
+<features-line v-bind:features="features">
+</features-line>
+	
+	
+	<page-menu v-bind:tags="current_category.tags" v-bind:base_url="category_url">
+	</page-menu>
+
+
+	<keep-alive>
+		<component :is='page_content_view' :page_content="page_content" >
+		</component>
+	</keep-alive>
+	
+	
+</div>
+</body>
+
+<script type="text/javascript" src="lib/vue.min.js"> </script>
+<script type="text/javascript" src="database/index.txt"> </script>
+<script type="text/javascript" src="build/dynalinks.min.js"> </script>

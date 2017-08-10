@@ -1,0 +1,447 @@
+html,body
+{
+	margin: 0;
+	padding: 5px;
+}
+
+.main-header
+{
+	margin-right: 25px;
+	bottom: 1px solid black;
+	clear: both;
+}
+
+.top-buttons a
+{
+	border: none;
+	border-radius: 1px;
+}
+
+.news-block
+{
+	margin-bottom: 5px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.075);
+	border-radius: 4px;
+}
+
+.news-line
+{
+	margin-left: 100px;
+	margin-right: 85px;
+	border-left: 3px solid #FFCCAA;
+	margin-right: 25px;	
+}
+
+.news-line a,
+.news-block a
+{
+	display: block;
+	color: black;
+	/*background-color: #fff;*/
+	text-decoration: none;
+	padding: 10px 15px;	
+}
+
+.bottom-line
+{
+	border-bottom: 3px solid #FFCCAA;
+}
+
+.news-line a
+{
+	padding: 15px 15px 15px 15px;	
+	margin-right: 0px;
+	display: inline-block;
+	border-right: 3px solid #FFCCAA;
+}
+
+
+.news-line a:hover,
+.news-block a:hover
+{
+	text-decoration: none;	
+	background-color: #EEE;
+}
+
+
+.clear-block
+{
+	clear: both;
+}
+
+.menu-up
+{
+	width: auto;
+}
+
+
+.news-header
+{
+	text-align: right;
+	margin: 0px;
+	margin-right: 25px;
+	padding: 0 3px;
+	font-style: oblique;
+	/*background-color: #006dff;
+	color: #ccffcc;*/
+	border-bottom: 3px solid #006dff;
+}
+
+
+.header-left-buttons
+{
+	width: 80px;
+	margin-right: 5px;
+	float: left;
+}
+
+.news-backlink
+{
+	/*float: left;*/
+	border: 1px solid black;
+	padding: 10px 10px;
+	margin: 5px 5px;
+	border-radius: 7px;
+	width: 75px;
+}
+
+.news-backlink a,
+.news-backlink a:visited,
+.page-menu a:visited
+{
+	color: #FFCCAC;
+}
+
+.news-backlink:hover
+{
+	background-color: #00C6C6;
+}
+
+
+.separator
+{
+	margin: 30px 0;
+}
+
+
+div.header
+{
+	padding: 15px 0;
+}
+
+.buttons-headers 
+{
+	width: 270px;
+	float: left;
+}
+
+.buttons-headers a,
+.buttons-headers a:visited
+{
+	display: block;
+	outline: 1px solid #FFCACF;
+	padding: 5px 15px;	
+	text-decoration: none;
+	/*font-family: Verdana, Georgia, serif;*/
+	/*font-size: 14px;	*/
+	color: #0000FF;
+}
+
+.buttons-headers a:hover
+{
+	background-color: #AA0000;
+	color: #FFFFFF;
+}
+
+.tab-content
+{
+	float: left;
+	outline: 1px solid #FFCACF;
+	min-width: 540px;
+	max-width: 800px;
+}
+
+.data-grid a,
+.data-grid a:visited
+{
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 5px 5px;
+	color: black;
+	width: 220px;
+	font-family: Verdana, Georgia, serif;
+	font-size: 14px;
+	border-bottom: 0.6px solid rgb(225, 225, 215);
+	border-right: 0.6px solid rgb(225, 225, 215);
+	text-decoration: none;
+}
+
+.data-grid a:hover
+{
+	background-color: rgb(245, 245, 245);
+	color: #CC0000;
+}
+
+.edit-tab
+{
+}
+
+.editable-link
+{
+	display: inline-block;
+	position: relative;
+	/*width: 220px;*/
+}
+
+.editable-link   .edit-btn
+{
+	position: absolute;
+	left: 0px;
+}
+
+.editable-link  .delete-btn
+{
+	position: absolute;
+	right: 0px;
+}
+
+
+
+/*
+top buttons
+*/
+
+.top-buttons a,
+.top-buttons a:visited
+{
+	background-color: #FFFFF1;
+	background-image: linear-gradient(to bottom, #FFFFF1, #DDDDAA);
+	border-radius: 0;
+	text-decoration: none;
+	color: #009999;
+	font-family: Verdana, Georgia, Times New Roman, serif;
+	font-size: 12px;
+}
+
+.top-buttons a:hover
+{
+	text-decoration: none;
+	background-color: #DDDDAA;
+	color: white;
+	/*background-color: #CCCC88;*/
+	background-position: 0 50%;
+	transition: background-position 0.1s linear 0s;
+	animation: 0.4s ease-in-out 0.1s normal none 1 zoomIn;
+	-webkit-animation: bounceIn 0.4s ease-in-out;
+	/*
+		duration
+		timing function
+		delay
+		direction
+		fill-mode
+		iteration count
+		name
+	*/
+	
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: scale(1.1);
+    animation-timing-function: ease-out;
+  }
+  
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+@keyframes bounceIn 
+{
+	0% {
+		transform: scale(1);
+	}
+	
+	50% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+@-webkit-keyframes bounceIn {
+	0% {
+		-webkit-transform: scale(1);
+	}
+	
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.1);
+	}
+	
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+
+/*
+end top-button
+*/
+.top-line a
+{
+	display: inline-block;
+	margin: 5px; 
+	padding: 5px;
+}
+
+
+.search-result a,
+.search-result a:visited,
+.search-result a:hover
+{
+	display: inline;
+
+	padding: 1px 1px;
+	margin: 0;
+	color: black;
+	width: auto;
+	font-family: Verdana, Georgia, serif;
+	font-size: 14px;
+	border: none;
+	text-decoration: none;
+}
+
+.search-result thead
+{
+	background-color: #77AA77;
+	color: #FFFFFF;
+}
+
+.update-form
+{
+	float: left;	
+}
+
+.required-fields
+{
+	border: 1px solid black;
+	background-color: #cceEee;	
+}
+
+.other-fields
+{
+	background-color: #ccEEEE;	
+}
+
+
+.fields
+{
+	margin: 5px 10px;
+	padding: 10px 10px;
+}
+
+
+.update-form button
+{
+	padding: 5px 10px;
+	/*background-image: linear-gradient(to bottom, #F90000, #DDDDAA);*/
+	background-color: #F9F900;
+}
+
+.update-form button:hover
+{
+	/*background-image: linear-gradient(to bottom, #F10000, #DDDD00);*/
+	background-color: #C0C000;
+}
+
+.update-form .cancel-button
+{
+	position: relative;
+}
+
+.editable-link a.edit-btn
+{
+	display: inline;
+	position: relative;
+}
+
+
+.features-line .features-button
+{
+	display: inline-block;
+	padding: 15px;
+	margin-right: 0px;
+	border-right: 3px solid #FFCCAA;
+}
+
+.features-line .features-button:hover
+{
+	background-color: #EEE;
+}
+
+.features-line .features-button,
+.features-line .features-button:hover,
+.features-line .features-button:visited,
+.features-line .features-button:active
+{
+	text-decoration: none;	
+	color: #00AA00;
+}
+
+.control-panel a.link-button 
+{
+    display:inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000000;
+    /*outline: 1px solid #f500f5;*/
+    text-align: center;
+    font-size: 14px;    
+}
+
+.control-panel a.link-button:hover 
+{
+    color: #FF00FF;
+    text-decoration: underline;    
+}
+
+.control-panel
+{
+    /*outline: 10px solid #0000ff;*/
+     text-align: right;
+
+}
+
+
+.submenu a
+{
+    display: block;
+    min-width: 200px;
+    animation: none !important;
+    background: #FFFFFF;
+    
+}
+
+.submenu a:hover
+{
+    background-color: #FcFc00;
+    color: #000099;
+}
