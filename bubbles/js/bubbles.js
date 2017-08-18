@@ -38,7 +38,7 @@
     }
     
 
-   my_app.max_spheres = 30;
+   my_app.max_spheres = 10;
    my_app.active_count = 10;
    my_app.emission_per_second = 1;
    
